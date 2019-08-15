@@ -1,0 +1,16 @@
+.title_style {
+    font-style: normal;
+    color: orange;
+    font-family: Verdana;
+    font-size: xx-large;
+    align-content: center;
+    text-underline: black;
+}
+
+.text_style {
+    font-style: normal;
+    color: black;
+    font-family: "DejaVu Sans Mono";
+    font-size: initial;
+    align-content: normal;
+}
