@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="@{/css/text.css}" />
+<title>Users</title>
+</head>
+<body>
+
+	<div class="container">
+		<form action="#" th:action="@{/books/add}" th:object="${book}" method="post">
+			<div class="form-group">
+				<label for="title">Title</label> 
+				<input
+					type="text" class="form-control" id="title" placeholder="Enter title" th:field="*{title}">
+
+			</div>
+			<div class="form-group">
+				<label for="description">Description</label> 
+				<input type="text" class="form-control" id="description"
+					placeholder="Enter description" th:field="*{description}" >
+			</div>
+			
+			<div class="form-group">
+				<label for="isbn">ISBN</label> <input
+					type="text" class="form-control" id="isbn"
+					placeholder="Enter ISBN" th:field="*{isbn}">
+			</div>
+			
+			<div class="form-group">
+				<label for="pageCount">Page Count</label> <input
+					type="number" class="form-control" id="pageCount"
+					placeholder="Enter Page Count" th:field="*{pageCount}">
+			</div>
+			
+			<div class="form-group">
+				<label for="author">Author</label> <input
+					type="text" class="form-control" id="author"
+					placeholder="Enter Author" th:field="*{author}">
+			</div>
+			
+			<div class="form-group">
+				<label for="date">Date Published</label> <input
+					type="text" class="form-control" id="date"
+					placeholder="Enter date published" th:field="*{datePublished}">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
